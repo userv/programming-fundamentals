@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tricky_Strings", "Tricky_Strings\Tricky_Strings.csproj", "{ED802BF4-16E3-480D-93C7-07262E56F9BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cypher_Roulette", "Cypher_Roulette\Cypher_Roulette.csproj", "{1F357908-9FFD-4EDC-8E4E-39EFDA8129A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{ED802BF4-16E3-480D-93C7-07262E56F9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED802BF4-16E3-480D-93C7-07262E56F9BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED802BF4-16E3-480D-93C7-07262E56F9BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F357908-9FFD-4EDC-8E4E-39EFDA8129A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F357908-9FFD-4EDC-8E4E-39EFDA8129A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F357908-9FFD-4EDC-8E4E-39EFDA8129A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F357908-9FFD-4EDC-8E4E-39EFDA8129A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
