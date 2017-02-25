@@ -13,7 +13,7 @@ namespace Winecraft
             List<int> grapes = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
             int daysGrowth = int.Parse(Console.ReadLine());
 
-            while (grapes.Count - 1 == daysGrowth)
+            while (grapes.Count > daysGrowth)
             {
                 grapes = WineCraft(daysGrowth, grapes);
                 for (int j = 0; j < grapes.Count; j++)
@@ -35,47 +35,30 @@ namespace Winecraft
             {
                 for (int j = 0; j < grapes.Count; j++)
                 {
+                    grapes[j]++;
+                }
+                for (int j = 0; j < grapes.Count; j++)
+                {
                     bool isFirstElement = j == 0;
                     bool isLastElement = j == grapes.Count - 1;
-                    if (isFirstElement)
-                    {
-                        var isNextGreaterGrape = IsNextGreaterGrape(grapes, j);
-                        if (!isNextGreaterGrape)
-                        {
-                            grapes[j]++;
-                            continue;
-                        }
-                    }
+                    
                     if (!isFirstElement && !isLastElement)
                     {
                         var isGreaterGrape = IsGreaterGrape(grapes, j);
+                        if (isGreaterGrape) grapes[j]--;
+
                         if (isGreaterGrape && grapes[j - 1] > 0)
                         {
                             grapes[j]++;
-                            grapes[j - 1]--;
+                            grapes[j - 1]=Math.Max(grapes[j-1]-2,0);
                         }
                         if (isGreaterGrape && grapes[j + 1] > 0)
                         {
                             grapes[j]++;
-                            grapes[j + 1]--;
+                            grapes[j + 1]= Math.Max(grapes[j + 1] - 2, 0);
                             continue;
                         }
-                        //var isNextGreaterGrape = IsNextGreaterGrape(grapes, j);
-                        //var isPreviousGreaterGrape = IsPreviousGreaterGrape(grapes, j);
-                        if (grapes[j] > 0 && !IsNextGreaterGrape(grapes,j))
-                        {
-                            grapes[j]++;
-                        }
-
-                    }
-
-                    if (isLastElement)
-                    {
-                        var isPreviousGreaterGrape = IsPreviousGreaterGrape(grapes, j);
-                        if (grapes[j] > 0 && !isPreviousGreaterGrape)
-                        {
-                            grapes[j]++;
-                        }
+                        
                     }
                 }
             }
