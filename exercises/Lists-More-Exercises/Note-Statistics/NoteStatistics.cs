@@ -33,6 +33,7 @@ namespace Note_Statistics
                 {
                     sharps.Add(note);
                     sharpsSum += frequencies[noteList.IndexOf(note)];
+                  
                 }
             }
             Console.WriteLine("Sharps: "+string.Join(", ", sharps));

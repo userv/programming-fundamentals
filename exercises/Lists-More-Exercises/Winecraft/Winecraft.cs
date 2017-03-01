@@ -24,9 +24,7 @@ namespace Winecraft
                     }
                 }
             }
-
             Console.WriteLine(string.Join(" ", grapes));
-
         }
 
         public static List<int> WineCraft(int daysGrowth, List<int> grapes)
