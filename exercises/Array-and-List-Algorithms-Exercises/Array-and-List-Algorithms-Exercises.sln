@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sort-Array-of-Strings", "So
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayHistogram", "ArrayHistogram\ArrayHistogram.csproj", "{ECC5609A-253A-42CB-874C-9332D2B538EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decode-Radio-Frequencies", "Decode-Radio-Frequencies\Decode-Radio-Frequencies.csproj", "{D4B4DD7C-934A-4D0D-8ABD-0FC1CCEEAFE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Batteries", "Batteries\Batteries.csproj", "{C8404EB0-1C71-4842-B599-044CCF93F177}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{ECC5609A-253A-42CB-874C-9332D2B538EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECC5609A-253A-42CB-874C-9332D2B538EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECC5609A-253A-42CB-874C-9332D2B538EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4B4DD7C-934A-4D0D-8ABD-0FC1CCEEAFE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4B4DD7C-934A-4D0D-8ABD-0FC1CCEEAFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4B4DD7C-934A-4D0D-8ABD-0FC1CCEEAFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4B4DD7C-934A-4D0D-8ABD-0FC1CCEEAFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8404EB0-1C71-4842-B599-044CCF93F177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8404EB0-1C71-4842-B599-044CCF93F177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8404EB0-1C71-4842-B599-044CCF93F177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8404EB0-1C71-4842-B599-044CCF93F177}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
