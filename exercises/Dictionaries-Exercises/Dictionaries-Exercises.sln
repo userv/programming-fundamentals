@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Letter=Repetition", "Letter=Repetition\Letter=Repetition.csproj", "{F09DA6BB-91EA-4380-8490-9B577CDFE2E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dict-Ref", "Dict-Ref\Dict-Ref.csproj", "{0FF02FB2-262B-4676-9ECE-E07AFCBEDD99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mixed-Phones", "Mixed-Phones\Mixed-Phones.csproj", "{07EF67B3-0A35-4590-8E7A-790DC6E0199E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F09DA6BB-91EA-4380-8490-9B577CDFE2E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F09DA6BB-91EA-4380-8490-9B577CDFE2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F09DA6BB-91EA-4380-8490-9B577CDFE2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F09DA6BB-91EA-4380-8490-9B577CDFE2E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF02FB2-262B-4676-9ECE-E07AFCBEDD99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF02FB2-262B-4676-9ECE-E07AFCBEDD99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF02FB2-262B-4676-9ECE-E07AFCBEDD99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF02FB2-262B-4676-9ECE-E07AFCBEDD99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07EF67B3-0A35-4590-8E7A-790DC6E0199E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07EF67B3-0A35-4590-8E7A-790DC6E0199E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07EF67B3-0A35-4590-8E7A-790DC6E0199E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07EF67B3-0A35-4590-8E7A-790DC6E0199E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
