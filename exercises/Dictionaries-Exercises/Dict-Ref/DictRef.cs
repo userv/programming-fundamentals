@@ -19,40 +19,43 @@ namespace Dict_Ref
                 string[] entry = inputLine
                     .Split(new char[] { '=' }, StringSplitOptions.None)
                     .ToArray();
-                entry[0] = entry[0].Trim();
-                entry[1] = entry[1].Trim();
-
-                int value;
-                bool success = int.TryParse(entry[1], out value);
-                if (success)
-                {
-                    if (refDictionary.ContainsKey(entry[0]))
-                    {
-                        refDictionary[entry[0]] = value;
-                    }
-                    else
-                    {
-                        refDictionary.Add(entry[0], value);
-                    }
-
-                }
-                else
-                {
-                    if (refDictionary.ContainsKey(entry[0]) && refDictionary.ContainsKey(entry[1]))
-                    {
-                        refDictionary[entry[0]] = refDictionary[entry[1]];
-                    }
-                    else if (!refDictionary.ContainsKey(entry[0]) && refDictionary.ContainsKey(entry[1]))
-                    {
-                        refDictionary.Add(entry[0], refDictionary[entry[1]]);
-                    }
-                }
-
+                AddToDictionary(entry, refDictionary);
             }
             foreach (var kvp in refDictionary)
             {
                 Console.WriteLine($"{kvp.Key} === {kvp.Value}");
 
+            }
+        }
+
+        public static void AddToDictionary(string[] entry, Dictionary<string, int> refDictionary)
+        {
+            entry[0] = entry[0].Trim();
+            entry[1] = entry[1].Trim();
+
+            int value;
+            bool success = int.TryParse(entry[1], out value);
+            if (success)
+            {
+                if (refDictionary.ContainsKey(entry[0]))
+                {
+                    refDictionary[entry[0]] = value;
+                }
+                else
+                {
+                    refDictionary.Add(entry[0], value);
+                }
+            }
+            else
+            {
+                if (refDictionary.ContainsKey(entry[0]) && refDictionary.ContainsKey(entry[1]))
+                {
+                    refDictionary[entry[0]] = refDictionary[entry[1]];
+                }
+                else if (!refDictionary.ContainsKey(entry[0]) && refDictionary.ContainsKey(entry[1]))
+                {
+                    refDictionary.Add(entry[0], refDictionary[entry[1]]);
+                }
             }
         }
     }

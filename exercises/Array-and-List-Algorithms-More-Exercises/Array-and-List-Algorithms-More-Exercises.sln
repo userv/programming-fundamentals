@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit-Hole", "Rabbit-Hole\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Japanese-Roulette", "Japanese-Roulette\Japanese-Roulette.csproj", "{DD50DE0C-34C4-4941-95E3-E5DD97272361}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Increasing-Crisis", "Increasing-Crisis\Increasing-Crisis.csproj", "{C0D0AA69-7DFC-4496-9579-5BE7D6C61060}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DD50DE0C-34C4-4941-95E3-E5DD97272361}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD50DE0C-34C4-4941-95E3-E5DD97272361}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD50DE0C-34C4-4941-95E3-E5DD97272361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0D0AA69-7DFC-4496-9579-5BE7D6C61060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0D0AA69-7DFC-4496-9579-5BE7D6C61060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0D0AA69-7DFC-4496-9579-5BE7D6C61060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0D0AA69-7DFC-4496-9579-5BE7D6C61060}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
