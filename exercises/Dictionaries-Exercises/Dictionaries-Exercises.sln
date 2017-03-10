@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Letter=Repetition", "Letter=Repetition\Letter=Repetition.csproj", "{F09DA6BB-91EA-4380-8490-9B577CDFE2E1}"
 EndProject
@@ -10,6 +10,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mixed-Phones", "Mixed-Phones\Mixed-Phones.csproj", "{07EF67B3-0A35-4590-8E7A-790DC6E0199E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam-Shopping", "Exam-Shopping\Exam-Shopping.csproj", "{934D5042-C38D-423E-873B-33F25C28BFF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User-Logins", "User-Logins\User-Logins.csproj", "{3F5B560C-C1E8-4997-8D31-28629A647FFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam-Shopping-v2", "Exam-Shopping-v2\Exam-Shopping-v2.csproj", "{3ECD30FC-D071-4C26-85A0-929EFF079228}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Filter-Base", "Filter-Base\Filter-Base.csproj", "{4510A797-E37F-40A9-A7E7-F7A12504F000}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{934D5042-C38D-423E-873B-33F25C28BFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{934D5042-C38D-423E-873B-33F25C28BFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{934D5042-C38D-423E-873B-33F25C28BFF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F5B560C-C1E8-4997-8D31-28629A647FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F5B560C-C1E8-4997-8D31-28629A647FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F5B560C-C1E8-4997-8D31-28629A647FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F5B560C-C1E8-4997-8D31-28629A647FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ECD30FC-D071-4C26-85A0-929EFF079228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ECD30FC-D071-4C26-85A0-929EFF079228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ECD30FC-D071-4C26-85A0-929EFF079228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ECD30FC-D071-4C26-85A0-929EFF079228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4510A797-E37F-40A9-A7E7-F7A12504F000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4510A797-E37F-40A9-A7E7-F7A12504F000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4510A797-E37F-40A9-A7E7-F7A12504F000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4510A797-E37F-40A9-A7E7-F7A12504F000}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
