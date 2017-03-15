@@ -56,12 +56,14 @@ namespace Dict_Ref_Advanced
             {
                 if (refDictionary.ContainsKey(entry[0]) && refDictionary.ContainsKey(entry[1]))
                 {
-                    refDictionary[entry[0]].AddRange(refDictionary[entry[1]]); 
+                    //refDictionary[entry[0]].AddRange(refDictionary[entry[1]]); 
+                    refDictionary[entry[0]]=new List<int>(refDictionary[entry[1]]);
                    // refDictionary[entry[0]] = refDictionary[entry[1]];
                 }
                 else if (!refDictionary.ContainsKey(entry[0]) && refDictionary.ContainsKey(entry[1]))
                 {
-                    refDictionary.Add(entry[0], refDictionary[entry[1]]);
+                    refDictionary[entry[0]] = new List<int>(refDictionary[entry[1]]);
+                    //refDictionary.Add(entry[0], refDictionary[entry[1]]);
                 }
             }
         }
