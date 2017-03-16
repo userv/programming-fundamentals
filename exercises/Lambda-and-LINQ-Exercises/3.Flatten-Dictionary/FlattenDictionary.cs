@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
+
 
 namespace _3.Flatten_Dictionary
 {
@@ -47,21 +43,24 @@ namespace _3.Flatten_Dictionary
                 Dictionary<string, string> orderedInnerDictionary = entry.Value
                      .Where(x => x.Value != "flattened")
                      .OrderBy(x => x.Key.Length)
-                     .ToDictionary(x => entry.Key, y => y.Value);
+                     .ToDictionary(x => x.Key, x => x.Value);
 
-                flattenedDictionary=entry.Value
-                    .Where(x => x.Value != "flattened")
+                flattenedDictionary = entry.Value
+                    .Where(x => x.Value == "flattened")
                     .ToDictionary(x => x.Key, x => x.Value);
-
+                int count = 0;
                 foreach (var innerEntry in orderedInnerDictionary)
                 {
-                    Console.WriteLine($"{innerEntry.Key} - {innerEntry.Value}");
+                    count++;
+                    Console.WriteLine($"{count}. {innerEntry.Key} - {innerEntry.Value}");
+
                 }
                 foreach (var flattenedEntry in flattenedDictionary)
                 {
-                    Console.WriteLine($"{flattenedEntry.Key}");
+                    count++;
+                    Console.WriteLine($"{count}. {flattenedEntry.Key}");
                 }
-                
+
             }
 
         }
