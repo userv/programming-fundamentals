@@ -29,7 +29,7 @@ namespace _4.Nilapdromes
                 string frontBorder = inputLine.Substring(0, numberOfChars);
                 string backBorder = inputLine.Substring(inputLine.Length - numberOfChars, numberOfChars);
                 string core = inputLine.Substring(frontBorder.Length, inputLine.Length - backBorder.Length * 2);
-                if ((frontBorder == backBorder)&& (core!=string.Empty))
+                if ((frontBorder == backBorder) && (core != string.Empty))
                 {
                     nilapdrome = core + frontBorder + core;
                     return nilapdrome;
