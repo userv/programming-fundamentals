@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _1.Charity_Marathon
 {
-    class CharityMarathon
+    public class CharityMarathon
     {
-        static void Main(string[] args)
+        public static void Main()
         {
             int days = int.Parse(Console.ReadLine());
             int runnersCount = int.Parse(Console.ReadLine());
@@ -16,9 +12,15 @@ namespace _1.Charity_Marathon
             int lapLength = int.Parse(Console.ReadLine());
             int trackCapacity = int.Parse(Console.ReadLine());
             double moneyPerKilometer = double.Parse(Console.ReadLine());
+            int totalCapacity = trackCapacity * days;
+            if (runnersCount > totalCapacity)
+            {
+                runnersCount = totalCapacity;
+            }
+            double totalKilometers = (double)runnersCount * averageLaps * lapLength / 1000;
+            double totalMoney = totalKilometers * moneyPerKilometer;
 
-
-
+            Console.WriteLine($"Money raised: {totalMoney:F2}");
         }
     }
 }
