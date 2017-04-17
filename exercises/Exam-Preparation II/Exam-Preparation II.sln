@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.Charity Marathon", "1.Cha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.Ladybugs", "2.Ladybugs\2.Ladybugs.csproj", "{5358AEF8-90D1-4ABF-B378-4571BCD59E5F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Nether Realms", "3.Nether Realms\3.Nether Realms.csproj", "{5DA8F973-8FB8-45D2-95A5-644567C94466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Roli The Coder", "4.Roli The Coder\4.Roli The Coder.csproj", "{05418082-5356-4179-89FC-112810B089BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{5358AEF8-90D1-4ABF-B378-4571BCD59E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5358AEF8-90D1-4ABF-B378-4571BCD59E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5358AEF8-90D1-4ABF-B378-4571BCD59E5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DA8F973-8FB8-45D2-95A5-644567C94466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DA8F973-8FB8-45D2-95A5-644567C94466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DA8F973-8FB8-45D2-95A5-644567C94466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DA8F973-8FB8-45D2-95A5-644567C94466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05418082-5356-4179-89FC-112810B089BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05418082-5356-4179-89FC-112810B089BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05418082-5356-4179-89FC-112810B089BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05418082-5356-4179-89FC-112810B089BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
