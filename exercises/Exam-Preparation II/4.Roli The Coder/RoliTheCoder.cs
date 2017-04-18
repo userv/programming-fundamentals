@@ -12,7 +12,7 @@ namespace _4.Roli_The_Coder
         {
             public int ID { get; set; }
             public string Name { get; set; }
-            public SortedSet<string> Participants = new SortedSet<string>();
+            public List<string> Participants = new List<string>();
         }
         public static void Main()
         {
@@ -27,29 +27,30 @@ namespace _4.Roli_The_Coder
                     continue;
                 }
                 string[] tokens = inputLine.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
-                int eventID = int.Parse(tokens[0]);
+                
+                int eventID =0;
+                if (!int.TryParse(tokens[0], out eventID))
+                {
+                    continue;
+                }
                 string eventName = tokens[1];
                 if (tokens.Length<2)
                 {
                     continue;
                 }
-                string[] participants = tokens.Skip(2).ToArray();
+                List<string> participants = tokens.Skip(2).ToList();
                 if (!participants.All(p => p.StartsWith("@")))
                 {
                     continue;
                 }
-                participants = participants.Select(x => x.Trim('@')).ToArray();
+                participants = participants.Select(x => x.Trim('@')).ToList();
                 
                 if (eventName[0] != '#')
                 {
                     continue;
                 }
                 eventName = eventName.Trim('#');
-                SortedSet<string> newParticipants = new SortedSet<string>();
-                foreach (var participant in participants)
-                {
-                    newParticipants.Add(participant);
-                }
+                participants.Sort();
                 if (!events.ContainsKey(eventID))
                 {
 
@@ -57,13 +58,19 @@ namespace _4.Roli_The_Coder
                     {
                         ID = eventID,
                         Name = eventName,
-                        Participants = newParticipants
+                        Participants = participants
                     };
                     events[eventID] = newEvent;
                 }
                 if (events[eventID].Name.Contains(eventName))
                 {
-                    events[eventID].Participants = newParticipants;
+                    foreach (var participant in participants)
+                    {
+                        if (!events[eventID].Participants.Contains(participant))
+                        {
+                            events[eventID].Participants.Add(participant);
+                        }
+                    }
                 }
 
                 inputLine = Console.ReadLine();
@@ -72,7 +79,7 @@ namespace _4.Roli_The_Coder
             foreach (var ev in orderedEvents)
             {
                 Console.WriteLine($"{ev.Name} - {ev.Participants.Count}");
-                foreach (var paticipant in ev.Participants)
+                foreach (var paticipant in ev.Participants.OrderBy(p=>p))
                 {
                     Console.WriteLine($"@{paticipant}");
                 }
