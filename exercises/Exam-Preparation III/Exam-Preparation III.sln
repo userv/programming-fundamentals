@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.SoftUni Coffee Orders", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.Command Interpreter", "2.Command Interpreter\2.Command Interpreter.csproj", "{6E344D9A-1DFD-471B-903F-D0F0B2C7C1AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Rage Quit", "3.Rage Quit\3.Rage Quit.csproj", "{9D75FA92-EC20-445D-95AA-139EFD24431E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Files", "4.Files\4.Files.csproj", "{1B2F63F7-A9B8-4D88-9213-321C500F042C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{6E344D9A-1DFD-471B-903F-D0F0B2C7C1AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E344D9A-1DFD-471B-903F-D0F0B2C7C1AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E344D9A-1DFD-471B-903F-D0F0B2C7C1AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D75FA92-EC20-445D-95AA-139EFD24431E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D75FA92-EC20-445D-95AA-139EFD24431E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D75FA92-EC20-445D-95AA-139EFD24431E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D75FA92-EC20-445D-95AA-139EFD24431E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2F63F7-A9B8-4D88-9213-321C500F042C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2F63F7-A9B8-4D88-9213-321C500F042C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2F63F7-A9B8-4D88-9213-321C500F042C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2F63F7-A9B8-4D88-9213-321C500F042C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
